@@ -1,7 +1,7 @@
 #### import needed modules ####
 import turtle
 
-#### Game Window Prepration ####
+#### Game Window Preparation ####
 wind = turtle.Screen()
 wind.title('Ping Pong Game By Energy')
 wind.bgcolor('black')
@@ -116,7 +116,7 @@ while True:
         score.clear()
         score.write("Player 1: {} - Player 2: {}".format(score_1, score_2), align= "center", font=("Courier", 22, "normal"))  
         
-    # check madraba and ball hitting
+    # check madrab and ball hitting
     # madrab_1
     if(ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < madrab_1.ycor() + 40 and ball.ycor() > madrab_1.ycor() - 40):
         ball.setx(-340)
